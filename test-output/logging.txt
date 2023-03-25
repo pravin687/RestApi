@@ -1,0 +1,47 @@
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "q",
+    "lastname": "r",
+    "totalprice": 1,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "12/05/4564",
+        "checkout": "30/12/5346"
+    },
+    "additionalneeds": "a,b"
+}
+HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 183
+Etag: W/"b7-u9hwqilKlU74sS472tfesm5UmDA"
+Date: Sat, 25 Mar 2023 05:58:16 GMT
+Via: 1.1 vegur
+
+{
+    "bookingid": 5664,
+    "booking": {
+        "firstname": "q",
+        "lastname": "r",
+        "totalprice": 1,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "4564-12-05",
+            "checkout": "0NaN-aN-aN"
+        },
+        "additionalneeds": "a,b"
+    }
+}
